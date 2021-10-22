@@ -6,7 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{C2C62BDA-FBDD-4D6A-A121-9B0070DE4F02}"
 ProjectSection(SolutionItems) = preProject
 	.gitignore = .gitignore
-	dockerfile = dockerfile
 	README.md = README.md
 EndProjectSection
 EndProject
@@ -14,7 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AC60C0AD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{556D346E-D134-4647-88C9-C6C0778F4707}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "merchandise-service", "src\merchandise-service\merchandise-service.csproj", "{5DBE5871-6221-4BBF-BD50-2D2EA43AFF40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchandiseService", "src\MerchandiseService\MerchandiseService.csproj", "{5DBE5871-6221-4BBF-BD50-2D2EA43AFF40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{E80B70A5-506B-4ACD-9EE9-CDC09185BDCB}"
+ProjectSection(SolutionItems) = preProject
+	dockerfile = dockerfile
+	docker-compose.yml = docker-compose.yml
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
