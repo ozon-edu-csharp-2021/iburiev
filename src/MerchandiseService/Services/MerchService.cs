@@ -10,9 +10,13 @@ namespace MerchandiseService.Services
     public class MerchService: IMerchService
     {
 
-        public Task<BaseResponse<object>> IssueMerch(MerchItemIssueModel merchItemIssueModel, CancellationToken token)
+        public async Task<BaseResponse<object>> IssueMerch(MerchItemIssueModel merchItemIssueModel, CancellationToken token)
         {
-            throw new System.NotImplementedException();
+            return new BaseResponse<object>()
+            {
+                Code = Status.Approved,
+                Message = "Ok"
+            };
         }
 
         public Task<BaseResponse<List<MerchItem>>> GetMerchByEmployeeId(long employeeId, CancellationToken token)

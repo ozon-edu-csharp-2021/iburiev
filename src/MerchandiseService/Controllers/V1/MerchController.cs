@@ -17,11 +17,11 @@ namespace MerchandiseService.Controllers.V1
             _merchService = merchService;
         }
 
-        [HttpPut]
+        [HttpPost]
         public async Task<IActionResult> IssueMerch(MerchItemIssueModel merchItemIssueModel, CancellationToken token)
         {
-            await _merchService.IssueMerch(merchItemIssueModel, token);
-            return Ok();
+            var response = await _merchService.IssueMerch(merchItemIssueModel, token);
+            return Ok(response);
         }
 
         [HttpGet]
